@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Algorithms, Part I.iml" filepath="$PROJECT_DIR$/Algorithms, Part I.iml" />
-      <module fileurl="file://$PROJECT_DIR$/week3_queues.iml" filepath="$PROJECT_DIR$/week3_queues.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week1-helloworld/week1-helloworld.iml" filepath="$PROJECT_DIR$/week1-helloworld/week1-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week2-unions/week2-unions.iml" filepath="$PROJECT_DIR$/week2-unions/week2-unions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week3-queues/week3-queues.iml" filepath="$PROJECT_DIR$/week3-queues/week3-queues.iml" />
     </modules>
   </component>
 </project>

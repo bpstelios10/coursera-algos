@@ -2,6 +2,11 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <addNotNullAssertions enabled="false" />
+    <bytecodeTargetLevel>
+      <module name="week3-queues" target="11" />
+      <module name="week3-queues.main" target="11" />
+      <module name="week3-queues.test" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-Xlint:all -Xlint:-overrides -Xdiags:verbose -Xmaxwarns 10 -Xmaxerrs 10" />

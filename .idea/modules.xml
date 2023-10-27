@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/week1-helloworld/week1-helloworld.iml" filepath="$PROJECT_DIR$/week1-helloworld/week1-helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/week2-unions/week2-unions.iml" filepath="$PROJECT_DIR$/week2-unions/week2-unions.iml" />
       <module fileurl="file://$PROJECT_DIR$/week3-queues/week3-queues.iml" filepath="$PROJECT_DIR$/week3-queues/week3-queues.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week4-collinear/week4-collinear.iml" filepath="$PROJECT_DIR$/week4-collinear/week4-collinear.iml" />
     </modules>
   </component>
 </project>

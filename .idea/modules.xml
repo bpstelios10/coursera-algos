@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/week3-queues/week3-queues.iml" filepath="$PROJECT_DIR$/week3-queues/week3-queues.iml" />
       <module fileurl="file://$PROJECT_DIR$/week4-collinear/week4-collinear.iml" filepath="$PROJECT_DIR$/week4-collinear/week4-collinear.iml" />
       <module fileurl="file://$PROJECT_DIR$/week5-8puzzle/week5-8puzzle.iml" filepath="$PROJECT_DIR$/week5-8puzzle/week5-8puzzle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week6-kdtree/week6-kdtree.iml" filepath="$PROJECT_DIR$/week6-kdtree/week6-kdtree.iml" />
     </modules>
   </component>
 </project>

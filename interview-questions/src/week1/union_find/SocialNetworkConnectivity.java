@@ -4,12 +4,17 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.UF;
 
+import static week1.testing.Assertions.assertThat;
+import static week1.testing.Assertions.assertThatThrows;
+
 public class SocialNetworkConnectivity {
 
     public static String earliestTimeOfFullConnectivity(int membersOnNetwork,
                                                         String csvLogsFileName) {
-        if (membersOnNetwork < 2) throw new IllegalArgumentException("network cannot have less than 2 members");
-        if (csvLogsFileName.isBlank()) throw new IllegalArgumentException("logs file name cannot be blank");
+        if (membersOnNetwork < 2)
+            throw new IllegalArgumentException("network cannot have less than 2 members");
+        if (csvLogsFileName.isBlank())
+            throw new IllegalArgumentException("logs file name cannot be blank");
 
         In in = new In(csvLogsFileName);
         UF graph = new UF(membersOnNetwork);
@@ -60,21 +65,5 @@ public class SocialNetworkConnectivity {
                                                                                "week1/social-network-test3.txt");
         assertThat("2020-12-26".equals(dateOfFullNetworkConnectivity3));
         StdOut.println("End of unit tests with no failures");
-    }
-
-    private static void assertThatThrows(Runnable command,
-                                         Class<? extends RuntimeException> exception,
-                                         String errorMessage) {
-        try {
-            command.run();
-        }
-        catch (Exception ex) {
-            assertThat(ex.getClass() == exception);
-            assertThat(ex.getMessage().equals(errorMessage));
-        }
-    }
-
-    private static void assertThat(boolean assertion) {
-        if (!assertion) throw new RuntimeException("Assertion failed");
     }
 }

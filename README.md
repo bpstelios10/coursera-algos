@@ -54,5 +54,7 @@ NOTE: checkstyle is disabled for the following code, since it is not a requireme
 To run the assignment from commandline, you need to go to /interview-questions/build folder and run:
 ```shell
 java -classpath :../../.lift/algs4.jar week1.union_find.SocialNetworkConnectivity
+java -classpath :../../.lift/algs4.jar week1.extended_union_find.ExtendedUFTest
 ```
 and from intellij, just run SocialNetworkConnectivity::main
+ExtendedUFTest::main

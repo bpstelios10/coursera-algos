@@ -119,26 +119,36 @@ public class MinSuccessorTrackerTest {
     }
 
     private void successorAndDelete_deleteMixed_succeeds() {
-        MinSuccessorTracker tracker = new MinSuccessorTracker(5);
+        MinSuccessorTracker tracker = new MinSuccessorTracker(10);
 
-        assertThat(tracker.findSuccessor(0) == 1);
         assertThat(tracker.findSuccessor(1) == 2);
         assertThat(tracker.findSuccessor(2) == 3);
-        assertThat(tracker.findSuccessor(3) == 4);
-        assertThat(tracker.findSuccessor(4) == -1);
+        assertThat(tracker.findSuccessor(6) == 7);
+        assertThat(tracker.findSuccessor(7) == 8);
 
         tracker.delete(2);
-        assertThat(tracker.findSuccessor(0) == 1);
         assertThat(tracker.findSuccessor(1) == 3);
         assertThat(tracker.findSuccessor(2) == 3);
-        tracker.delete(1);
-        assertThat(tracker.findSuccessor(0) == 3);
+        assertThat(tracker.findSuccessor(6) == 7);
+        assertThat(tracker.findSuccessor(7) == 8);
+        tracker.delete(7);
         assertThat(tracker.findSuccessor(1) == 3);
+        assertThat(tracker.findSuccessor(2) == 3);
+        assertThat(tracker.findSuccessor(6) == 8);
+        assertThat(tracker.findSuccessor(7) == 8);
+        tracker.delete(6);
+        tracker.delete(5);
         tracker.delete(3);
-        assertThat(tracker.findSuccessor(0) == 4);
-        assertThat(tracker.findSuccessor(1) == 4);
-        assertThat(tracker.findSuccessor(2) == 4);
-        assertThat(tracker.findSuccessor(3) == 4);
-        assertThat(tracker.findSuccessor(4) == -1);
+        tracker.delete(4);
+        assertThat(tracker.findSuccessor(0) == 1);
+        assertThat(tracker.findSuccessor(1) == 8);
+        assertThat(tracker.findSuccessor(2) == 8);
+        assertThat(tracker.findSuccessor(3) == 8);
+        assertThat(tracker.findSuccessor(4) == 8);
+        assertThat(tracker.findSuccessor(5) == 8);
+        assertThat(tracker.findSuccessor(6) == 8);
+        assertThat(tracker.findSuccessor(7) == 8);
+        assertThat(tracker.findSuccessor(8) == 9);
+        assertThat(tracker.findSuccessor(9) == -1);
     }
 }

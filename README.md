@@ -48,13 +48,24 @@ and from intellij, just run RangeSearchVisualizer::main with argument "week6-kdt
 ## Interview Questions
 NOTE: checkstyle is disabled for the following code, since it is not a requirement to follow the course-specific rules
 
-### Week2
+### Week1
 
 #### Union-Find
-To run the assignment from commandline, you need to go to /interview-questions/build folder and run:
+To run the assignment from commandline, from root path, run:
 ```shell
-java -classpath :../../.lift/algs4.jar week1.union_find.SocialNetworkConnectivity
-java -classpath :../../.lift/algs4.jar week1.extended_union_find.ExtendedUFTest
+java -classpath 'interview-questions\build;.lift/algs4.jar' week1.union_find.SocialNetworkConnectivity
+java -classpath 'interview-questions\build;.lift/algs4.jar' week1.union_find.ExtendedUFTest
+java -classpath 'interview-questions\build;.lift/algs4.jar' week1.union_find.MinSuccessorTrackerTest
 ```
-and from intellij, just run SocialNetworkConnectivity::main
+and from intellij, just execute:
+SocialNetworkConnectivity::main
 ExtendedUFTest::main
+MinSuccessorTrackerTest::main
+
+#### Algorithms-Analysis
+To run the assignment from commandline, from root path, run:
+```shell
+java -classpath 'interview-questions\build;.lift/algs4.jar' week1.algorithm_analysis.ThreeSumQuadraticTest
+```
+and from intellij, just execute:
+ThreeSumQuadraticTest::main

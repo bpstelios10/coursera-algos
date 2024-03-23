@@ -1,6 +1,4 @@
-package week1.min_successor;
-
-import week1.extended_union_find.ExtendedUF;
+package week1.union_find;
 
 /**
  * The hint says that we need to use the previous question structure (ExtendedUF). based on

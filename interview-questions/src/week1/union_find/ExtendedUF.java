@@ -1,4 +1,4 @@
-package week1.extended_union_find;
+package week1.union_find;
 
 public class ExtendedUF {
 

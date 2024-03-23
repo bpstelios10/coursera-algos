@@ -1,9 +1,9 @@
-package week1.extended_union_find;
+package week1.union_find;
 
 import edu.princeton.cs.algs4.StdOut;
 
-import static week1.testing.Assertions.assertThat;
-import static week1.testing.Assertions.assertThatThrows;
+import static testing.Assertions.assertThat;
+import static testing.Assertions.assertThatThrows;
 
 public class ExtendedUFTest {
 

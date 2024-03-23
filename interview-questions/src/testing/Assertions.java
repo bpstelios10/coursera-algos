@@ -1,4 +1,4 @@
-package week1.testing;
+package testing;
 
 public class Assertions {
 
